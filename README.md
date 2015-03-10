@@ -12,7 +12,7 @@ var check = require('checkerr').andExitProcess;
 doSomething(function(err, result)) {
 	check(err);
 	doActualStuff(result);
-}
+});
 ```
 
 **Call a higher callback on error**
@@ -23,9 +23,9 @@ function mainFunction(topmostCallback) {
 
 	doSomething(function(err, result)) {
 		if(check(err, topmostCallback)) return;
-		
-		doActualStuff(result);
-	}
 
-}
+		doActualStuff(result);
+	});
+
+});
 ```
