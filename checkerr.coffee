@@ -1,12 +1,12 @@
 # handle optional errors in callbacks in one line
-process = process
+p = process
 
-module.exports =
+module.exports = do ->
 
 	andExitProcess: (err, logger=console, badExitCode=-1) ->
 		if err?
 			logger.error(err) if typeof logger?.error is 'function'
-			process.exit badExitCode
+			p.exit badExitCode
 
 	andCallHigherCallback: (err, callback, wrapError=false) ->
 		if err? and typeof callback is 'function'
@@ -22,4 +22,4 @@ module.exports =
 		return false
 
 	mockProcess: (mock) ->
-		process = mock
+		p = mock
