@@ -1,6 +1,6 @@
 {
   "name": "checkerr",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "check for errors in callback functions in one line",
   "main": "index.js",
   "scripts": {
