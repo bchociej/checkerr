@@ -1,0 +1,11 @@
+{
+  "name": "checkerr",
+  "version": "0.0.1",
+  "description": "check for errors in callback functions in one line",
+  "main": "index.js",
+  "scripts": {
+    "test": "coffee test.coffee"
+  },
+  "author": "Ben Chociej <ben@chociej.io>",
+  "license": "Apache-2.0"
+}
