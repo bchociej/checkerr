@@ -29,3 +29,8 @@ function mainFunction(topmostCallback) {
 
 });
 ```
+
+**To mock out, with mockery e.g.**
+```javascript
+mockery.registerSubstitute('checkerr', 'checkerr/mock-disable');
+```
